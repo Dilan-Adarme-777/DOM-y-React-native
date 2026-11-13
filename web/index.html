@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contador interactivo de likes desarrollado con JavaScript">
+    <title>LikeCounter | Contador de Likes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+
+    <main class="container">
+        <section class="counter-card">
+
+            <header class="header">
+                <span class="tag">JAVASCRIPT DOM</span>
+                <h1>LikeCounter</h1>
+                <p>Contador interactivo de likes</p>
+            </header>
+
+            <section class="counter-section">
+                <span class="counter-label">LIKES TOTALES</span>
+
+                <h2 id="counter">0</h2>
+
+                <div class="actions">
+                    <button id="btn-like" class="btn btn-like">
+                        Me gusta
+                    </button>
+
+                    <button id="btn-subtract" class="btn btn-subtract">
+                        − Restar
+                    </button>
+
+                    <button id="btn-reset" class="btn btn-reset">
+                        Reiniciar
+                    </button>
+                </div>
+            </section>
+
+            <section class="history-section">
+                <div class="history-header">
+                    <h3>Historial de actividad</h3>
+                    <span id="history-count">0 registros</span>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Interacción</th>
+                                <th>Acción</th>
+                                <th>Hora</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="history-body">
+                        </tbody>
+                    </table>
+                </div>
+
+                <p id="empty-message">
+                    Todavía no hay interacciones registradas.
+                </p>
+            </section>
+
+            <footer>
+            </footer>
+
+        </section>
+    </main>
+
+</body>
+</html>
