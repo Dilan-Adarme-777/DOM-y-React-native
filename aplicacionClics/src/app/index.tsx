@@ -24,7 +24,7 @@ export default function App() {
     <View style={estilos.body}>
       <View style={estilos.card}>
         <Text style={estilos.title}>Interactividad con React Native</Text>
-        <Text style={estilos.counterBox}>{contador}</Text>
+        <Text style={[estilos.counterBox, contador > 10 && { color: "red" }]}>{contador}</Text>
 
         {/* Botón disparador de eventos */}
         <TouchableOpacity style={estilos.btnClick} onPress={incrementarContador}>
